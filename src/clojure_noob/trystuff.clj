@@ -19,7 +19,3 @@
   (dec n)
   )
 
-(defn mapset [v]
-  (let new-set set v)
-  (inc new-set)
-  )
