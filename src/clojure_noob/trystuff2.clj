@@ -37,3 +37,15 @@
   (let [[x y z] point]
     (println "x:" x ", y:" y ", z:" z)))
 ;;(print-coordinates-2 [2 3 4])
+
+(def john-smith {:f-name "John"
+                 :l-name "Smith"
+                 :phone "555-555-5555"
+                 :company "Functional Industries"
+                 :title "Sith Lord of Git"})
+
+(defn print-contact-info [{:keys [f-name l-name phone company title]}]
+  (println f-name l-name "is the" title "at" company)
+  (println "You can reach him at" phone))
+
+;;(print-contact-info john-smith)
